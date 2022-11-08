@@ -3,7 +3,7 @@ import re
 def ignore_commented_line(lines):
     clean_lines = []
     comment_pattern = re.compile("^#")
-    for s in lt:
+    for s in lines:
         m = comment_pattern.match(s)
         if m is None:
             s = s.replace("\t", "")
